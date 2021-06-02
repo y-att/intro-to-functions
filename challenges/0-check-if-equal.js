@@ -29,16 +29,16 @@ isEqual(0, 1) should be False
 */
 
 function isEqual (a,b) {
+    if (a === b){
+	
+        return true
+    }else{
 
-    if a is equal to b
-	return True
-else
+	return false
+}}
 
-	return False
-}
-
-console.log(isEqual (4,4))
-console.log(isEqual (0,0))
-console.log(isEqual (-4,-4))
-console.log(isEqual (4,-4))
-console.log(isEqual (0,1)
+console.log(isEqual(4,4))
+console.log(isEqual(0,0))
+console.log(isEqual(-4,-4))
+console.log(isEqual(4,-4))
+console.log(isEqual(0,1))
