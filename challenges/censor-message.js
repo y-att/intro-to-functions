@@ -11,7 +11,7 @@ function censorMessage (message, banList)
         let lowercaseWord = word.toLowerCase()
         //printed all words in lower case- this works
 
-        if (banlist.includes(lowercaseWord))
+        if (banList.includes(lowercaseWord))
         {
             // append lowercaseWord to end of scrubbedWords
             scrubbedWords.push('*****')
@@ -23,9 +23,8 @@ function censorMessage (message, banList)
             scrubbedWords.push(word)
             //console.log(word)
         }
-
     }
-    let scrubbedMessage = scrubbedWords
+    let scrubbedMessage = scrubbedWords.join('')
     //string created by joining together each string in scrubbedWords with '' as join character
 
     return scrubbedMessage
